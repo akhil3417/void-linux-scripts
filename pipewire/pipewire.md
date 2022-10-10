@@ -9,9 +9,19 @@
     sudo xbps-install libvirt bridge-utils libspa-bluetooth libjack-pipewire pamixer
 
 
-## Un-comment the following line in  /etc/pipewire/pipewire.conf
+## Un-comment the following line in  /etc/pipewire/pipewire.conf in section context.exec
+
+-   Should be at bottom of file
 
     #"/usr/bin/pipewire" = { args = "-c pipewire-pulse.conf" }
+
+
+## or if you want to use wireplumber
+
+-   install wireplumber via package manager
+-   comment all other options in context.exec section and add this
+
+    { path = "/usr/bin/wireplumber" args = "" }
 
 
 ## Create the follownig necessary symlinks in system
