@@ -24,7 +24,7 @@
     { path = "/usr/bin/wireplumber" args = "" }
 
 
-## Create the follownig necessary symlinks in system
+## Create the following necessary symlinks in system
 
     mkdir -p /etc/alsa/conf.d
     ln -s /usr/share/alsa/alsa.conf.d/50-pipewire.conf /etc/alsa/conf.d
