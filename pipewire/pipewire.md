@@ -1,4 +1,4 @@
-:PROPERTIES: 
+
 
 
 # How to install and configure pipewire in void linux
