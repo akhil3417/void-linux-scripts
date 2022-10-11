@@ -1,10 +1,7 @@
 
 
 
-# How to install and configure pipewire in void linux
-
-
-## Why pipewire
+# Why pipewire
 
 -   [Pipewire](https://pipewire.org/) is a server and user space API to deal with multimedia pipelines.It
     provides a low-latency, graph based processing engine on top of audio and
@@ -19,6 +16,9 @@
         -   Real-time Multimedia processing on audio and video.
         -   Multiprocess architecture to let applications share multimedia content.
         -   Seamless support for PulseAudio, JACK, ALSA and GStreamer applications.
+
+
+# How to install and configure pipewire in void linux
 
 
 ## Install the essential package's
