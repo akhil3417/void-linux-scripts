@@ -71,4 +71,5 @@
 ## Other resources about pipewire
 
 -   <https://github.com/mikeroyal/PipeWire-Guide>
+-   <https://wiki.archlinux.org/title/PipeWire>
 
