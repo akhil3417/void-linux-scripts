@@ -4,6 +4,23 @@
 # How to install and configure pipewire in void linux
 
 
+## Why pipewire
+
+-   [Pipewire](https://pipewire.org/) is a server and user space API to deal with multimedia pipelines.It
+    provides a low-latency, graph based processing engine on top of audio and
+    video devices that can be used to support the use cases currently handled by
+    both pulseaudio and JACK. PipeWire was designed with a powerful security model
+    that makes interacting with audio and video devices from containerized
+    applications easy. Nodes in the graph can be implemented as separate
+    processes, communicating with sockets and exchanging multimedia content using
+    fd passing. PipeWire was created by [Wim Taymans](https://gitlab.freedesktop.org/wtaymans) , Principal Engineer at Red Hat and co-creator of the GStreamer multimedia framework.
+    -   Key features of PipeWire include:
+        -   Capture and playback of audio and video with minimal latency.
+        -   Real-time Multimedia processing on audio and video.
+        -   Multiprocess architecture to let applications share multimedia content.
+        -   Seamless support for PulseAudio, JACK, ALSA and GStreamer applications.
+
+
 ## Install the essential package's
 
     sudo xbps-install libvirt bridge-utils libspa-bluetooth libjack-pipewire pamixer
@@ -49,4 +66,9 @@
     Type=Application
     X-GNOME-Autostart-Phase=Initialization
     X-KDE-autostart-phase=1
+
+
+## Other resources about pipewire
+
+-   <https://github.com/mikeroyal/PipeWire-Guide>
 
