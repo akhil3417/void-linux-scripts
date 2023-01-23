@@ -39,7 +39,7 @@ sudo sed -i "s/#user = \"root\"/user = \"$(id -un)\"/g" /etc/libvirt/qemu.conf
 sudo sed -i "s/#group = \"root\"/group = \"$(id -gn)\"/g" /etc/libvirt/qemu.conf
 sudo usermod -a -G kvm $(id -un)
 sudo usermod -a -G libvirt $(id -un)
-sudo systemctl restart libvirtd
+sudo ln -s /etc/sv/libvirtd /var/service
 sudo ln -s /etc/apparmor.d/usr.sbin.libvirtd /etc/apparmor.d/disable/
 
 echo
