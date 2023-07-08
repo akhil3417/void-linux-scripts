@@ -24,6 +24,8 @@
 ## Install the essential package's
 
     sudo xbps-install libvirt bridge-utils libspa-bluetooth libjack-pipewire pamixer
+    
+- You might need elogind as well
 
 
 ## Un-comment the following line in  /etc/pipewire/pipewire.conf in section context.exec
@@ -60,10 +62,12 @@
     [Desktop Entry]
     Version=1.0
     Name=Pipewire
+    Icon=pipewire
     Comment=Start Pipewire
     Exec=/usr/bin/pipewire
     Terminal=false
     Type=Application
+    NoDisplay=true
     X-GNOME-Autostart-Phase=Initialization
     X-KDE-autostart-phase=1
 
